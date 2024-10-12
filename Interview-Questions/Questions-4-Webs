@@ -1,0 +1,53 @@
+Website/Web Application:
+What is SSRF/how ssrf works/remediation for ssrf
+Type XSS
+Blind XSS
+What is Second Order SQL Injection
+how to check if sql injection is present in an application
+difference between types of sql injection
+what is parametrized query
+what is race condition vulnerbaility
+What is Smart Contract (WEB 3)
+test cases for broken access control
+different method for bypassing otp validation
+what are different test case for file upload
+what is the use hsts and csp header
+Hashing vs encryption vs encoding 
+Asymmetric vs symmetric 
+
+
+### General Web Application Security
+1. **What are the OWASP Top 10 vulnerabilities? Can you explain a few of them in detail?**
+2. **What is Cross-Site Scripting (XSS)? How would you test for it, and what are common ways to mitigate it?**
+3. **How does Cross-Site Request Forgery (CSRF) work, and how can it be prevented?**
+4. **Can you explain the difference between SQL Injection and Blind SQL Injection? How would you exploit both types?**
+5. **What is an IDOR (Insecure Direct Object Reference), and how can it be exploited?**
+
+### Vulnerability Identification & Exploitation
+6. **How would you perform a manual SQL injection on a vulnerable web application? Show example payloads.**
+7. **What tools do you use for web application vulnerability scanning, and how would you validate the findings manually?**
+8. **Can you walk me through how you'd exploit a file upload vulnerability to gain server access?**
+9. **How do you identify security misconfigurations in web applications? Can you give an example from a past test?**
+10. **What is Local File Inclusion (LFI) and Remote File Inclusion (RFI)? How do these vulnerabilities occur, and how would you exploit them?**
+
+### Advanced Techniques
+11. **What is a Race Condition, and how can it be exploited in a web application?**
+12. **How would you escalate privileges in a web application after gaining initial access?**
+13. **How would you bypass web application firewalls (WAF) during a penetration test?**
+14. **Explain how you would use the Burp Suite or another proxy tool to intercept and modify requests.**
+15. **How can you exploit session fixation vulnerabilities, and what are the ways to prevent them?**
+
+### Testing Methodologies & Tools
+16. **Walk me through the steps of performing a comprehensive web application penetration test, from recon to reporting.**
+17. **Which automated tools (e.g., Burp Suite, OWASP ZAP, etc.) do you commonly use in your penetration tests, and why?**
+18. **How do you perform manual testing for Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF)?**
+19. **Explain how you would test for Server-Side Request Forgery (SSRF) vulnerabilities in an application.**
+20. **Describe a situation where a vulnerability was not detected by automated tools but was found manually. How did you identify and exploit it?**
+
+### Real-world Scenario-based Questions
+21. **How would you approach testing an e-commerce application for payment fraud vulnerabilities?**
+22. **You’ve found a stored XSS vulnerability in an internal application. What are the potential risks, and how would you exploit this in a controlled way?**
+23. **A client uses OAuth for authentication. What specific vulnerabilities would you look for when testing OAuth implementations?**
+24. **If a web application only allows authenticated users to access certain functionality, how would you test for authentication bypass vulnerabilities?**
+25. **Explain how you'd perform a security test on a REST API. What types of vulnerabilities would you expect to find?**
+

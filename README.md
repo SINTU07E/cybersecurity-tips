@@ -1,2 +1,3 @@
 # cybersecurity-tips
-Here I will post Bug Bounty Tips and all cybersecurity related topics.
+
+A collection of cybersecurity tips and bug bounty resources.

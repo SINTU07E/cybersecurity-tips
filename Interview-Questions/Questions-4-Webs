@@ -23,6 +23,7 @@ Does Authentication token can protect Csrf?
 Differences between csrf vs ssrf?
 
 
+
 ### General Web Application Security
 1. **What are the OWASP Top 10 vulnerabilities? Can you explain a few of them in detail?**
 2. **What is Cross-Site Scripting (XSS)? How would you test for it, and what are common ways to mitigate it?**

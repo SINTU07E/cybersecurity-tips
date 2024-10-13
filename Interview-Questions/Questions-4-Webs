@@ -59,3 +59,7 @@ Differences between csrf vs ssrf?
 24. **If a web application only allows authenticated users to access certain functionality, how would you test for authentication bypass vulnerabilities?**
 25. **Explain how you'd perform a security test on a REST API. What types of vulnerabilities would you expect to find?**
 
+
+How you define severity?
+How to calculate cve ?
+

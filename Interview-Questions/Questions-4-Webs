@@ -14,6 +14,13 @@ what are different test case for file upload
 what is the use hsts and csp header
 Hashing vs encryption vs encoding 
 Asymmetric vs symmetric 
+what is file upload vulnerability?
+Security headers
+Cookie Attributes-Httponly,Secure, path, etc
+In real-world scenario how to perform mitm if site is running on https?
+what is csrf?
+Does Authentication token can protect Csrf?
+Differences between csrf vs ssrf?
 
 
 ### General Web Application Security

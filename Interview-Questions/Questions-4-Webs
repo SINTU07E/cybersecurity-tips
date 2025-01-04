@@ -1,6 +1,14 @@
 Website/Web Application:
+
+What is SQL injection 
+Types of SQL injection 
+What is xss
+Types of xss
+What is csrf
+What is ssrf
+Security headers,
+What are ports, etc
 What is SSRF/how ssrf works/remediation for ssrf
-Type XSS
 Blind XSS
 What is Second Order SQL Injection
 how to check if sql injection is present in an application
@@ -15,7 +23,6 @@ what is the use hsts and csp header
 Hashing vs encryption vs encoding 
 Asymmetric vs symmetric 
 what is file upload vulnerability?
-Security headers
 Cookie Attributes-Httponly,Secure, path, etc
 In real-world scenario how to perform mitm if site is running on https?
 what is csrf?

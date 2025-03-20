@@ -1,0 +1,23 @@
+**Android:**
+Bypassing loop/root detection in Android
+what do you check in static code analysis of apk
+What is manifest file
+difference b/w SAST and DAST
+what is web view
+vulnerability for js enabled in web view
+vulnerbaility shared preference file
+
+What are Android, key components? 
+
+=In Android, key components to inspect during APK pentesting are:
+
+Activities – Entry points for user interaction; check for exported activities.
+Services – Background processes; review for insecure IPC (Inter-Process Communication).
+Broadcast Receivers – Listen for system or app events; check for unauthorized triggers.
+Content Providers – Manage data sharing; test for SQL injection and unauthorized access.
+Intents – Used for communication between components; ensure proper input validation.
+
+
+What is android:exported="true"? 
+
+= If android:exported="true" is set in the AndroidManifest.xml, it means the component can be accessed by other apps.

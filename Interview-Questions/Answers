@@ -3,7 +3,7 @@ Here are the answers for your interview preparation (Security Analyst/Senior Sec
 ---
 
 ### **Android**
-- **Bypassing loop/root detection in Android**  
+- **Bypassing Root detection in Android**  
   - Use Frida, Magisk, or Xposed framework to hook and bypass root detection.
   
 - **What do you check in static code analysis of APK?**  

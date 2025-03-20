@@ -1,0 +1,178 @@
+Android:
+Bypassing loop/root detection in Android
+what do you check in static code analysis of apk
+What is manifest file
+difference b/w SAST and DAST
+what is web view
+vulnerability for js enabled in web view
+vulnerbaility shared preference file
+
+Website/Web Application:
+What is SSRF/how ssrf works/remediation for ssrf
+Type XSS
+Blind XSS
+What is Second Order SQL Injection
+how to check if sql injection is present in an application
+difference between types of sql injection
+what is parametrized query
+what is race condition vulnerbaility
+What is Smart Contract (WEB 3)
+test cases for broken access control
+different method for bypassing otp validation
+what are different test case for file upload
+what is the use hsts and csp header
+Hashing vs encryption vs encoding 
+Asymmetric vs symmetric 
+
+
+
+
+Thin/Thick client:
+SCA
+Difference between thick and thin client
+
+ios:
+
+
+Networking:
+What is port 88 how to exploit it
+How to convert subnet to ip
+what is host discovery scan
+how to exploit ftp
+Procedure for Network vapt
+
+****************************
+
+Date 10-03-2025
+
+Intro.
+Which is your strong zone? (Web,mobile, infra, etc)
+What will you do for a login page?
+Which tools are you using?
+How you will test SQL injection and with which tool?
+Https://xyz.com/Fetch?url= 
+How much you rate yourself (Web,mobile, infra, etc)?
+If we give you IP for external network pentesting how will you approach?
+How you test mobile application?
+What are components in Android?
+What is android:exported="true"? 
+What is VA and PT?
+What is Threat Modeling?
+What is ssti?
+What are vulnerable hash?
+What is Active Directory?
+What about the VLAN?
+What is ssl pinning?
+What is the highest vulnerability you have found in your career?
+What will be the highest impact can made by SQL injection?
+Can we get RCE using sqli?
+Have you made any custom script for improving any process?
+Any tool to automated process of brute force?
+Sqli best practices?
+Forgot password page what are your test cases?
+Do you have any experience in leading team?
+What is the difference between symmetric encryption and asymmetric encryption?
+What is insecure desilleragization?
+
+
+
+
+
+
+
+Android: 
+
+What are Android, key components? 
+
+=In Android, key components to inspect during APK pentesting are:
+
+Activities – Entry points for user interaction; check for exported activities.
+Services – Background processes; review for insecure IPC (Inter-Process Communication).
+Broadcast Receivers – Listen for system or app events; check for unauthorized triggers.
+Content Providers – Manage data sharing; test for SQL injection and unauthorized access.
+Intents – Used for communication between components; ensure proper input validation.
+
+
+What is android:exported="true"? 
+
+= If android:exported="true" is set in the AndroidManifest.xml, it means the component can be accessed by other apps.
+
+
+Infra: 
+How will you approach if we give you a IP?
+Which tools you will use?
+
+What is Thread Modeling 
+What is SSTI (Server-Side Template Injection)
+Which is vulnerable hash - MD5, SHA1
+What is active directory 
+What is VLAN
+What is ssl pinning 
+What highest bug you have found
+What highest impact you can achieve via sqli
+Sqli remediation 
+Symmetric Encryption Examples: AES, DES, 3DES, Blowfish.
+Asymmetric Encryption Examples: RSA, ECC, DSA, ElGamal.
+Owasp top 10
+Insecure Deserialization
+Which tool you use for brute force attack? (Other than burp intruder) = Hydra, ffuf, etc
+
+
+
+
+
+
+
+
+**********†********
+
+
+
+Sqlmap commands for SQL injection
+
+New updated Owasp top 10 -2025
+
+How to check malicious IP -(virus total)- Rely on trusted source only
+
+How you are keep updated yourself -(Certin, and trusted sources only)
+
+How you do Asset Management (like to keep up-to-date with zero day attacks)
+
+How do you perform memory dump/forensic 
+
+What is the difference between Parrot Os and Linux OS
+
+
+Nmap
+
+Tcp connect -st vs sync scan ss
+
+
+What is the difference between in nmap ssl connect and sync scan
+
+How to identify firewall (firewall and intrusion prevention) using Nmap
+
+How you will udp scan
+
+How you will intercept https request using burpsuite (using CA certificate)
+
+Difference between active and passive scan in burpsuite 
+
+
+What is TLS (which current version we are using)
+
+
+
+SQL injection 
+
+
+What is shodan Dorking 
+
+
+
+
+
+
+
+
+

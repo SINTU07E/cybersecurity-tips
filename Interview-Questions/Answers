@@ -1,0 +1,237 @@
+Here are the answers for your interview preparation (Security Analyst/Senior Security Analyst/Security Engineer/Information Security Associate Role):
+
+---
+
+### **Android**
+- **Bypassing loop/root detection in Android**  
+  - Use Frida, Magisk, or Xposed framework to hook and bypass root detection.
+  
+- **What do you check in static code analysis of APK?**  
+  - Hardcoded credentials, insecure storage, exported components, improper permissions, weak encryption.
+
+- **What is manifest file?**  
+  - AndroidManifest.xml defines app permissions, components, and configurations.
+
+- **Difference between SAST and DAST?**  
+  - SAST: Static analysis without execution.  
+  - DAST: Dynamic analysis during execution.
+
+- **What is WebView?**  
+  - WebView is an embedded browser inside an Android app to render web content.
+
+- **Vulnerability for JS enabled in WebView?**  
+  - JavaScript Interface Injection (RCE), Cross-site scripting (XSS).
+
+- **Vulnerability in Shared Preferences file?**  
+  - Stored in plaintext, vulnerable to data theft if not encrypted.
+
+---
+
+### **Website/Web Application**
+- **What is SSRF, how SSRF works, and remediation?**  
+  - Server-Side Request Forgery: Attacker manipulates server to make unintended requests.  
+  - **Remediation:** Validate and whitelist URLs, restrict internal network access.
+
+- **Types of XSS?**  
+  - Stored, Reflected, DOM-based.
+
+- **Blind XSS?**  
+  - Payload is stored and triggers when accessed by an admin or another user.
+
+- **What is Second Order SQL Injection?**  
+  - Injected payload is stored and executed later in a different SQL query.
+
+- **How to check if SQL injection is present?**  
+  - Use payloads like `' OR 1=1 --` and check for unexpected behavior.
+
+- **Difference between types of SQL Injection?**  
+  - Boolean-based, Time-based, Error-based, Union-based, Out-of-band.
+
+- **What is a parameterized query?**  
+  - Prepared statements that prevent SQL injection.
+
+- **What is race condition vulnerability?**  
+  - Exploiting simultaneous operations to gain unintended access.
+
+- **What is Smart Contract (Web3)?**  
+  - Self-executing contract with blockchain-enforced terms.
+
+- **Test cases for Broken Access Control?**  
+  - Check unauthorized URL access, IDOR, privilege escalation.
+
+- **Different methods for bypassing OTP validation?**  
+  - Brute force, manipulating API response, replay attacks.
+
+- **Different test cases for file upload?**  
+  - File type validation, directory traversal, malware upload.
+
+- **Use of HSTS and CSP headers?**  
+  - HSTS: Enforces HTTPS.  
+  - CSP: Prevents XSS by restricting script sources.
+
+- **Hashing vs Encryption vs Encoding?**  
+  - Hashing: One-way, irreversible (MD5, SHA).  
+  - Encryption: Reversible with a key (AES, RSA).  
+  - Encoding: Data transformation (Base64).
+
+- **Asymmetric vs Symmetric Encryption?**  
+  - Symmetric: Single key (AES, DES).  
+  - Asymmetric: Public-private key pair (RSA, ECC).
+
+---
+
+### **Thin/Thick Client**
+- **SCA (Software Composition Analysis)?**  
+  - Identifies vulnerabilities in third-party libraries and dependencies.
+
+- **Difference between Thick and Thin Client?**  
+  - **Thick:** Local processing, less network dependency.  
+  - **Thin:** Cloud-based, relies on server-side processing.
+
+---
+
+### **Networking**
+- **What is port 88 and how to exploit it?**  
+  - Used by Kerberos for authentication, can be targeted for ticket forgery.
+
+- **How to convert subnet to IP?**  
+  - Calculate network address using subnet mask.
+
+- **What is Host Discovery Scan?**  
+  - Identifies live hosts in a network (e.g., Nmap -sn).
+
+- **How to exploit FTP?**  
+  - Anonymous login, brute-force, misconfigured permissions.
+
+- **Procedure for Network VAPT?**  
+  - Recon → Scanning → Exploitation → Post-exploitation → Reporting.
+
+---
+
+### **Introductory Questions**
+- **Which is your strong zone?**  
+  - Web, Mobile, Infra, or a combination.
+
+- **What will you do for a login page?**  
+  - Test for SQLi, Brute force, Weak password policies, 2FA bypass.
+
+- **Which tools are you using?**  
+  - Burp Suite, Nmap, SQLmap, Metasploit, Frida, MobSF.
+
+- **How will you test SQL injection and with which tool?**  
+  - Manual payloads + automated testing using SQLmap.
+
+- **Https://xyz.com/Fetch?url= (what will you test here?)**  
+  - SSRF, Open Redirect, LFE, RFI, all other injection vulnerabilities, etc
+
+- **How much do you rate yourself in Web/Mobile/Infra?**  
+  - (Self-assessment based on expertise).
+
+- **If given an IP for external network pentesting, how will you approach?**  
+  - Recon → Port Scanning → Vulnerability Scanning → Exploitation.
+
+- **How do you test mobile applications?**  
+  - Static and dynamic analysis, reverse engineering, API security.
+
+- **What are components in Android?**  
+  - Activities, Services, Content Providers, Broadcast Receivers.
+
+- **What is android:exported="true"?**  
+  - Component accessible by external apps.
+
+- **What is VA and PT?**  
+  - Vulnerability Assessment (VA): Identifying weaknesses.  
+  - Penetration Testing (PT): Actively exploiting vulnerabilities.
+
+- **What is Threat Modeling?**  
+  - Identifying threats and mitigation strategies.
+
+- **What is SSTI (Server-Side Template Injection)?**  
+  - Injecting malicious template syntax in server-side rendering engines.
+
+- **What are vulnerable hashes?**  
+  - MD5, SHA-1 (collision-prone).
+
+- **What is Active Directory?**  
+  - Microsoft’s directory service for user and access management.
+
+- **What about VLAN?**  
+  - Virtual LAN: Logical segmentation of networks.
+
+- **What is SSL Pinning?**  
+  - Enforces specific SSL certificates to prevent MITM attacks.
+
+- **What is the highest vulnerability you have found?**  
+  - (Your best finding, e.g., RCE, IDOR, SQLi).
+
+- **What is the highest impact SQL injection can cause?**  
+  - RCE, Database Dump, Authentication Bypass.
+
+- **Can we get RCE using SQLi?**  
+  - Yes, in certain cases via stacked queries or out-of-band exploitation.
+
+- **Have you made any custom scripts for improving processes?**  
+  - (Mention automation scripts, tools you built).
+
+- **Any tool to automate brute force?**  
+  - Hydra, FFUF, THC-Hydra.
+
+- **SQLi best practices?**  
+  - Use parameterized queries, ORM, input validation.
+
+- **Forgot password page test cases?**  
+  - Email enumeration, token reuse, weak reset mechanism.
+
+- **Do you have experience in leading a team?**  
+  - (Mention leadership experience if any).
+
+- **What is insecure deserialization?**  
+  - Exploiting deserialized data to execute malicious code.
+
+---
+
+### **Additional Topics**
+- **SQLmap commands for SQL injection?**  
+  - `sqlmap -u "http://xyz.com?id=1" --dbs`
+
+- **New OWASP Top 10 - 2025 updates?**  
+  - (Check latest OWASP updates).
+
+- **How to check malicious IP?**  
+  - Use VirusTotal, AbuseIPDB.
+
+- **How do you stay updated?**  
+  - Follow CERT-In, exploit-db, security blogs.
+
+- **How do you manage assets and Zero-Day attacks?**  
+  - Continuous monitoring, patch management.
+
+- **How do you perform memory dump/forensics?**  
+  - Volatility, FTK Imager.
+
+- **Difference between Parrot OS and Kali Linux?**  
+  - Parrot: Lightweight, privacy-focused.  
+  - Kali: Penetration testing standard.
+
+- **Nmap TCP connect (-st) vs SYN scan (-ss)?**  
+  - TCP Connect (-st): Full handshake.  
+  - SYN Scan (-ss): Half-open, stealthy.
+
+- **How to identify a firewall using Nmap?**  
+  - TTL analysis, packet filtering detection.
+
+- **UDP scan in Nmap?**  
+  - `nmap -sU -p <ports> <target>`
+
+- **Intercept HTTPS requests using BurpSuite?**  
+  - Install CA certificate.
+
+- **Difference between active and passive scans in BurpSuite?**  
+  - Active: Sends payloads.  
+  - Passive: Observes requests.
+
+- **What is TLS (latest version)?**  
+  - Transport Layer Security, latest version TLS 1.3.
+
+- **What is Shodan Dorking?**  
+  - Searching for exposed devices using Shodan queries.

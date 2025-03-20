@@ -1,0 +1,93 @@
+PART -2 
+
+---
+
+## **Android Security**  
+1. **How does Frida help in mobile pentesting?**  
+   - Frida is a dynamic instrumentation tool that helps modify app behavior at runtime, bypassing security controls like SSL pinning and root detection.  
+
+2. **What is Dex2Jar used for?**  
+   - It converts Android’s DEX files into JAR files to decompile and analyze the app’s bytecode.  
+
+3. **How do you test API security in an Android app?**  
+   - Capture requests via Burp Suite, check for authentication flaws, test for IDOR, and replay requests with modified data.  
+
+4. **How does Insecure Logging pose a security risk?**  
+   - If sensitive data is logged, it can be extracted from logs, leading to data exposure.  
+
+5. **What are the risks of improperly configured Content Providers?**  
+   - If not protected, they can allow unauthorized access to app data via SQL injection or unauthorized queries.  
+
+---
+
+## **Web Application Security**  
+1. **What is HTTP Request Smuggling?**  
+   - A vulnerability that allows an attacker to send a specially crafted request to manipulate how a backend processes multiple HTTP requests.  
+
+2. **What is a Null Byte Injection Attack?**  
+   - A technique used to bypass input validation by inserting `%00` to terminate strings early.  
+
+3. **How do you exploit Host Header Injection?**  
+   - Modify the `Host` header in an HTTP request to hijack password reset links or perform SSRF attacks.  
+
+4. **What are common GraphQL security issues?**  
+   - Over-fetching sensitive data, improper rate limiting, lack of access control, and DoS via deep queries.  
+
+5. **How do you check for an insecure CORS configuration?**  
+   - Look for `Access-Control-Allow-Origin: *` or permissive wildcard origins that allow unauthorized access.  
+
+---
+
+## **Thick/Thin Client Security**  
+1. **How to analyze traffic of a Thick Client application?**  
+   - Use tools like Burp Suite or Fiddler with proxy settings to intercept and analyze requests.  
+
+2. **What are common Thick Client vulnerabilities?**  
+   - Hardcoded credentials, insecure storage, weak encryption, DLL hijacking.  
+
+3. **How do you bypass certificate pinning in a Thick Client?**  
+   - Use tools like Frida, mitmproxy, or recompile the app after removing the pinning logic.  
+
+---
+
+## **Networking & Infra Security**  
+1. **What is ARP Spoofing?**  
+   - Manipulating the ARP cache to redirect network traffic to an attacker’s machine.  
+
+2. **How do you check for SMB vulnerabilities?**  
+   - Use `nmap -p 445 --script smb-vuln-* <target>` to detect SMB-related exploits.  
+
+3. **How does ICMP-based network scanning work?**  
+   - It sends ICMP echo requests (ping) to discover active hosts in a network.  
+
+4. **What is MITM (Man-in-the-Middle) Attack?**  
+   - Intercepting and altering communication between two parties without their knowledge.  
+
+---
+
+## **General Pentesting Questions**  
+1. **How do you handle rate limits in a pentest?**  
+   - Rotate IPs, use sleep intervals, and try low-profile attacks to evade detection.  
+
+2. **How do you perform a Subdomain Enumeration?**  
+   - Use tools like Sublist3r, Amass, and crt.sh to discover subdomains.  
+
+3. **What is a WAF and how do you bypass it?**  
+   - A Web Application Firewall filters HTTP traffic; bypass using encoding, case variation, or headers manipulation.  
+
+4. **How do you detect a vulnerable JWT token?**  
+   - Check for weak signing algorithms like `none`, leaked secrets, or insecure claims.  
+
+---
+
+## **Red Teaming & Exploitation**  
+1. **How do you escalate privileges in Windows?**  
+   - Exploit weak ACLs, unquoted service paths, DLL hijacking, or use token impersonation.  
+
+2. **What is LSASS Dumping?**  
+   - Extracting credentials from LSASS memory using tools like Mimikatz or procdump.  
+
+3. **How do you bypass AMSI (Antimalware Scan Interface)?**  
+   - Use obfuscated payloads, AMSI patching, or reflective DLL injection.  
+
+--- 🚀

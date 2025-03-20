@@ -1,34 +1,34 @@
 ### **🔹 Web Application Security**  
-6. **How can you detect and exploit template injection vulnerabilities?**  
+1. **How can you detect and exploit template injection vulnerabilities?**  
    → Identify **user-controlled template syntax** in **Jinja2, Twig, or Freemarker** and execute payloads like `{{7*7}}`. If it evaluates to `49`, it’s vulnerable.  
 
-7. **What are some real-world attack scenarios for HTTP request smuggling?**  
+2. **What are some real-world attack scenarios for HTTP request smuggling?**  
    → Attackers manipulate **Content-Length** and **Transfer-Encoding** headers to poison caches, bypass security filters, or hijack sessions.  
 
-8. **How do you bypass client-side JavaScript validation for security testing?**  
+3. **How do you bypass client-side JavaScript validation for security testing?**  
    → Use **Burp Suite or Tamper Data** to modify requests before they reach the server, bypassing frontend security.  
 
-9. **Explain the risks of allowing wildcard CORS configurations (`Access-Control-Allow-Origin: *`).**  
+4. **Explain the risks of allowing wildcard CORS configurations (`Access-Control-Allow-Origin: *`).**  
    → Any website can make requests to the vulnerable API, leading to **data theft and CSRF-like attacks**.  
 
-10. **What is a JWT attack, and how can you exploit it?**  
+5. **What is a JWT attack, and how can you exploit it?**  
    → Attackers exploit weak JWT configurations, such as **none algorithm abuse, key leakage, or brute-forcing weak secrets**.  
 
 
 🔹 Android Security
-How do you analyze an Android APK without running it on a device?
+6. How do you analyze an Android APK without running it on a device?
 → Use static analysis with tools like MobSF, JADX, and APKTool to inspect code, permissions, and configurations.
 
-What are the security risks of using deep links in Android apps?
+7. What are the security risks of using deep links in Android apps?
 → Unvalidated deep links can lead to intent hijacking, open redirects, and data leakage if improperly handled.
 
-How do you bypass SSL pinning in an Android application?
+8. How do you bypass SSL pinning in an Android application?
 → Use Frida, Objection, or Xposed to hook SSL functions and bypass certificate validation.
 
-What is the role of the KeyStore in Android security?
+9. What is the role of the KeyStore in Android security?
 → The Android Keystore stores cryptographic keys securely, preventing them from being extracted from the device.
 
-Explain the impact of exported ContentProvider vulnerabilities.
+10. Explain the impact of exported ContentProvider vulnerabilities.
 → Improperly exported ContentProviders can lead to **data theft, SQL injection,Privilege Escalation, Data theft via URI Injection,etc.
 If android:exported="true" is set without proper security controls, it can be dangerous and should be false unless explicitly required.
 Set android:exported="false" unless the component needs to be accessed by other apps, in which case proper permissions and security checks must be implemented.

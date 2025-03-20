@@ -7,6 +7,9 @@ what is web view
 vulnerability for js enabled in web view
 vulnerbaility shared preference file
 
+
+********************************************************************************************************************************************
+
 Website/Web Application:
 What is SSRF/how ssrf works/remediation for ssrf
 Type XSS
@@ -30,9 +33,12 @@ Asymmetric vs symmetric
 Thin/Thick client:
 SCA
 Difference between thick and thin client
-
+****************************************************************************************************************
 ios:
 
+
+
+****************************************************************************************************************
 
 Networking:
 What is port 88 how to exploit it
@@ -41,9 +47,7 @@ what is host discovery scan
 how to exploit ftp
 Procedure for Network vapt
 
-****************************
-
-Date 10-03-2025
+****************************************************************************************************************
 
 Intro.
 Which is your strong zone? (Web,mobile, infra, etc)
@@ -76,7 +80,7 @@ What is insecure desilleragization?
 
 
 
-
+********************************************************************************************************************************************
 
 
 
@@ -97,6 +101,8 @@ What is android:exported="true"?
 
 = If android:exported="true" is set in the AndroidManifest.xml, it means the component can be accessed by other apps.
 
+
+****************************************************************************************************************
 
 Infra: 
 How will you approach if we give you a IP?
@@ -124,7 +130,7 @@ Which tool you use for brute force attack? (Other than burp intruder) = Hydra, f
 
 
 
-**********†********
+**********†********************************************************************************************
 
 
 

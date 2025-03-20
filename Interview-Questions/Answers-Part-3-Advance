@@ -1,0 +1,110 @@
+### **🔹 Web Application Security**  
+6. **How can you detect and exploit template injection vulnerabilities?**  
+   → Identify **user-controlled template syntax** in **Jinja2, Twig, or Freemarker** and execute payloads like `{{7*7}}`. If it evaluates to `49`, it’s vulnerable.  
+
+7. **What are some real-world attack scenarios for HTTP request smuggling?**  
+   → Attackers manipulate **Content-Length** and **Transfer-Encoding** headers to poison caches, bypass security filters, or hijack sessions.  
+
+8. **How do you bypass client-side JavaScript validation for security testing?**  
+   → Use **Burp Suite or Tamper Data** to modify requests before they reach the server, bypassing frontend security.  
+
+9. **Explain the risks of allowing wildcard CORS configurations (`Access-Control-Allow-Origin: *`).**  
+   → Any website can make requests to the vulnerable API, leading to **data theft and CSRF-like attacks**.  
+
+10. **What is a JWT attack, and how can you exploit it?**  
+   → Attackers exploit weak JWT configurations, such as **none algorithm abuse, key leakage, or brute-forcing weak secrets**.  
+
+
+🔹 Android Security
+How do you analyze an Android APK without running it on a device?
+→ Use static analysis with tools like MobSF, JADX, and APKTool to inspect code, permissions, and configurations.
+
+What are the security risks of using deep links in Android apps?
+→ Unvalidated deep links can lead to intent hijacking, open redirects, and data leakage if improperly handled.
+
+How do you bypass SSL pinning in an Android application?
+→ Use Frida, Objection, or Xposed to hook SSL functions and bypass certificate validation.
+
+What is the role of the KeyStore in Android security?
+→ The Android Keystore stores cryptographic keys securely, preventing them from being extracted from the device.
+
+Explain the impact of exported ContentProvider vulnerabilities.
+→ Improperly exported ContentProviders can lead to **data theft, SQL injection,Privilege Escalation, Data theft via URI Injection,etc.
+If android:exported="true" is set without proper security controls, it can be dangerous and should be false unless explicitly required.
+Set android:exported="false" unless the component needs to be accessed by other apps, in which case proper permissions and security checks must be implemented.
+
+---
+
+### **🔹 Network Security**  
+11. **How do you perform MITM (Man-in-the-Middle) attacks using ARP spoofing?**  
+   → Use `arpspoof` or `ettercap` to manipulate ARP tables and intercept network traffic.  
+
+12. **What is DNS rebinding, and how can it be abused?**  
+   → DNS rebinding tricks a victim’s browser into bypassing **Same-Origin Policy** to access internal services.  
+
+13. **How do you detect out-of-band (OOB) vulnerabilities in a pentest?**  
+   → Use **Burp Collaborator, interact.sh, or DNS exfiltration** to capture blind SSRF, XXE, or command injection callbacks.  
+
+14. **How would you enumerate SMB shares in a corporate network?**  
+   → Use `smbclient -L <IP>` or `enum4linux` to list accessible shares and potential misconfigurations.  
+
+15. **What are the risks of LLMNR/NBT-NS poisoning, and how do you prevent them?**  
+   → Attackers use **Responder** to capture NTLM hashes. Mitigate by **disabling LLMNR/NBT-NS** and enforcing SMB signing.  
+
+---
+
+### **🔹 Cryptography & Secure Coding**  
+16. **How would you exploit a weak JWT signing algorithm?**  
+   → If **`none` algorithm** is allowed, modify the JWT header to `"alg": "none"` and remove the signature to bypass authentication.  
+
+17. **Why is ECB mode in encryption considered insecure?**  
+   → ECB (Electronic Codebook) **does not use an IV**, causing identical plaintext blocks to encrypt to identical ciphertext blocks, exposing patterns.  
+
+18. **What is a padding oracle attack, and how does it work?**  
+   → Attackers use error messages from padding validation to decrypt AES-CBC encrypted data without knowing the key.  
+
+19. **How can an attacker exploit weak password hashing techniques?**  
+   → Weak hashes like **MD5 or SHA1** can be brute-forced or cracked using **rainbow tables**.  
+
+20. **What is the difference between nonce reuse attacks and IV reuse attacks?**  
+   → **Nonce reuse** (in AES-GCM) leads to ciphertext collisions; **IV reuse** (in AES-CBC) allows padding oracle attacks.  
+
+---
+
+### **🔹 Advanced Penetration Testing**  
+21. **How do you escalate privileges in a Windows environment after gaining a foothold?**  
+   → Use **token impersonation, DLL hijacking, or exploiting unquoted service paths**.  
+
+22. **What are some techniques for bypassing endpoint detection & response (EDR)?**  
+   → Use **process injection, direct syscalls, AMSI bypass, or obfuscation techniques**.  
+
+23. **How do you analyze malware behavior in a sandbox environment?**  
+   → Use **Cuckoo Sandbox, Procmon, and Wireshark** to monitor process creation, registry changes, and network traffic.  
+
+24. **What is Ghostwriting in phishing campaigns?**  
+   → Creating **realistic but fake email threads** to manipulate victims into trusting and opening malicious content.  
+
+25. **How do attackers exploit OAuth misconfigurations in web applications?**  
+   → **Stealing access tokens, redirect URI manipulation, or token leakage via referrer headers.**  
+
+---
+
+### **🔹 Red Teaming & Exploit Development**  
+26. **How do you create a custom payload for a red team engagement?**  
+   → Use **MSFVenom, Cobalt Strike Beacon, or custom C2 frameworks** with obfuscation to evade detection.  
+
+27. **What is Heap Spraying, and how is it used in exploit development?**  
+   → Pre-filling the heap with **predictable data** to increase the chances of controlling memory corruption exploits.  
+
+28. **How would you evade Windows Defender & AMSI while executing payloads?**  
+   → Use **direct syscalls, encrypted loaders, or AMSI bypass techniques like patching AMSI.dll**.  
+
+29. **What are DACL misconfigurations, and how can they be exploited in privilege escalation?**  
+   → Weak **Discretionary Access Control Lists (DACLs)** allow attackers to modify files/services they shouldn’t have access to.  
+
+30. **How do you perform cloud penetration testing (AWS/Azure/GCP)?**  
+   → Enumerate misconfigured **IAM roles, public S3 buckets, exposed APIs, and privilege escalation paths**.  
+
+---
+
+These **new advanced questions with answers** cover **Android, Web, Network, Cryptography, and Red Teaming**! Let me know if you need **deeper explanations or specific areas expanded!** 🚀
